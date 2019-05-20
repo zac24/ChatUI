@@ -35,6 +35,7 @@ extension ViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
 //        cell.textLabel?.text = "Could not load IOSurface for time string. Rendering locally instead. Could not load IOSurface for time string. Rendering locally instead. Could not load IOSurface for time string. Rendering locally instead"
 //        cell.textLabel?.numberOfLines = 0
+        tableView.separatorStyle = .none
         return cell
     }
 }
