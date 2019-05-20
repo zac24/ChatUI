@@ -31,7 +31,7 @@ class MessageCell: UITableViewCell {
         let backgroundViewConstraint = [bubbleBackgroundView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
                                         bubbleBackgroundView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
                                         bubbleBackgroundView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
-                                        bubbleBackgroundView.widthAnchor.constraint(equalToConstant: 250)]
+                                        bubbleBackgroundView.widthAnchor.constraint(lessThanOrEqualToConstant: 250)]
         
         
         let constraints = [messageLabel.topAnchor.constraint(equalTo: bubbleBackgroundView.topAnchor, constant: 16),
