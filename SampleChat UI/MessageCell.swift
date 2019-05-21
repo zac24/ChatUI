@@ -18,7 +18,7 @@ class MessageCell: UITableViewCell {
     
     var chatMessage : ChatMessage!{
         didSet{
-            bubbleBackgroundView.backgroundColor = chatMessage.isIncoming ? .white : .darkGray
+            bubbleBackgroundView.backgroundColor = chatMessage.isIncoming ? .white : .green
             messageLabel.textColor = chatMessage.isIncoming ? .black : .white
             messageLabel.text = chatMessage.text
             
